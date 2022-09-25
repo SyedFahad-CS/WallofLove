@@ -7,7 +7,7 @@ A simple colorful sticky notes app
 ![nnn](./icons/project-thumbnail.png)
 
  ## Mobile Screenshots
- ![nnn](./icons/mobile-view.gif);
+ ![mobile-view](https://user-images.githubusercontent.com/100190813/192153310-2fef0855-4c06-45a9-b6e9-74eb38c2b4a2.gif)
 
 
 ## Built with
