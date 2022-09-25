@@ -7,11 +7,11 @@ const allNotes = [];
 const color = document.querySelector('.get-color');
 const notesList = document.querySelector('.notes-list');
 
-document.addEventListener('keypress', (event) => {
-    if (event.keyCode === 13) {
-        addNewNote();
-    }
-})
+// document.addEventListener('keypress', (event) => {
+//     if (event.keyCode === 13) {
+//         addNewNote();
+//     }
+// })
 
 function addNewNote() {
     if (input.value) {
