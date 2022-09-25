@@ -227,6 +227,7 @@ font-size: 18px;
 
 .note{
     animation:tilt-n-move-shaking 2s linear;
+    transition: transform 0.4s ease-in, box-shadow 0.4s ease-in-out;
 }
 
 textarea{
