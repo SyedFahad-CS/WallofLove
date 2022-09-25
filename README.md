@@ -4,7 +4,7 @@ A simple colorful sticky notes app
 - Add short notes
 - Choose different colors for notes
 
-## DESKTOP Screenshots
+## Desktop Screenshots
 ![nnn](./icons/project-thumbnail.png)
 
  ## Mobile Screenshots
