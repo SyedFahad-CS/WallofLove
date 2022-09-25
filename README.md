@@ -12,7 +12,7 @@ A simple colorful sticky notes app
 
 
 ## Built with
-HTML, CSS and vannila Js
+HTML, CSS and Vanilla JS
 
 ## Demo
 You can see live demo [here](https://walloflove.netlify.app).
