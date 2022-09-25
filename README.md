@@ -12,12 +12,11 @@ A simple colorful,Desktop First , Mobile-friendly sticky notes app.
  ## Mobile Screenshots
  ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/100190813/192153545-00e95a00-df16-4043-a62c-b979c561181c.gif)
 
-
-
 ## Built with
 HTML, CSS and Vanilla JS
 
 ## Demo
+We have Hosted it on Netlify.
 You can see live demo [here](https://walloflove.netlify.app).
 
 ## Contributing
