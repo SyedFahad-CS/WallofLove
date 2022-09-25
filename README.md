@@ -1,4 +1,4 @@
-# 📗 WallofLove
+# 📒 WallofLove
 A simple colorful sticky notes app
 
 - Add short notes
