@@ -6,7 +6,10 @@ A simple colorful sticky notes app
 
 ![nnn](./icons/project-thumbnail.png)
 
- 
+ ## Mobile Screenshots
+ ![nnn](./icons/mobile-view.gif);
+
+
 ## Built with
 HTML, CSS and vannila Js
 
@@ -17,3 +20,4 @@ You can see live demo [here](https://walloflove.netlify.app).
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 
+g
