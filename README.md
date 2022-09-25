@@ -1,8 +1,10 @@
-# 📗 NotesWall
+# 📗 WallOfLove
 A simple colorful sticky notes app
 
 - Add short notes
 - Choose different colors for notes
+- Copy the notes
+- Delete the notes
 
 ![nnn]()
 
@@ -13,7 +15,8 @@ HTML,CSS,Vanilla JS
 ## Demo
 You can see live demo [here]().
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## Contributors
+Dhwani, Syed, Ismeet and Angad
+
 
 
