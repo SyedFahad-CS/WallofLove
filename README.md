@@ -1,8 +1,10 @@
 # 📒 WallofLove
-A simple colorful sticky notes app
+A simple colorful,Desktop First , Mobile-friendly sticky notes app.
 
 - Add short notes
 - Choose different colors for notes
+- Delete a Note
+- Copy Text from the Note
 
 ## Desktop Screenshots
 ![nnn](./icons/project-thumbnail.png)
