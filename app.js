@@ -83,6 +83,6 @@ function copyNote(e,element) {
     // Copy the text inside the text field
   
   //   Alert the copied text
-  //   alert("Copied the text: " + copyText);
+    alert("Copied text: " + copyText);
   
   }
