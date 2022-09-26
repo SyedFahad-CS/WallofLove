@@ -7,7 +7,11 @@ const color = document.querySelector('.get-color');
 const notesList = document.querySelector('.notes-list');
 
 const allNotes = getNotes();
-displayNotes(getNotes());
+console.log(localStorage.getItem("allnotes-sticky"));
+if(localStorage.getItem("allnotes-sticky") !== "[]"){
+    displayNotes(getNotes());
+}
+
 
 // document.addEventListener('keypress', (event) => {
 //     if (event.keyCode === 13) {
@@ -36,6 +40,7 @@ function addNewNote() {
 }
 
 
+
 function displayNotes(notes) {
     notesList.innerHTML = " ";
     notes.forEach(element => {
@@ -47,6 +52,7 @@ function displayNotes(notes) {
             <div class="buttons">
                 <a class="deleteBtn"><img src="icons/bin.png" class="bin-icon"></a>
                 <a class="copyBtn"><img src="icons/copyBtn.svg" class="copy-icon"></a>
+            
             </div>
         </div>
         `;
