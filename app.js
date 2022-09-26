@@ -2,10 +2,12 @@
 const input = document.querySelector('.get-note');
 const addNoteBtn = document.querySelector('#add-btn');
 addNoteBtn.addEventListener("click", addNewNote);
-const allNotes = [];
 
 const color = document.querySelector('.get-color');
 const notesList = document.querySelector('.notes-list');
+
+const allNotes = getNotes();
+displayNotes(getNotes());
 
 // document.addEventListener('keypress', (event) => {
 //     if (event.keyCode === 13) {
@@ -16,6 +18,7 @@ const notesList = document.querySelector('.notes-list');
 function addNewNote() {
     if (input.value) {
         let newNote = {
+            id: Math.floor(Math.random()*1000),
             note: input.value,
             noteColor: color.value
         };
@@ -25,11 +28,11 @@ function addNewNote() {
         alert("A note can't be empty.");
     }
     // console.log(newNote);
-
+    localStorage.setItem("allnotes-sticky", JSON.stringify(allNotes));
     input.value = "";
     input.focus();
     
-    displayNotes(allNotes);
+    displayNotes(getNotes());
 }
 
 
@@ -41,7 +44,7 @@ function displayNotes(notes) {
             <div class="note-view" id="note-view" contenteditable>
                 ${element.note}
             </div>
-            <div>
+            <div class="buttons">
                 <a class="deleteBtn"><img src="icons/bin.png" class="bin-icon"></a>
                 <a class="copyBtn"><img src="icons/copyBtn.svg" class="copy-icon"></a>
             </div>
@@ -51,21 +54,28 @@ function displayNotes(notes) {
         notesList.insertAdjacentHTML('afterbegin', noteHTML);
         
         const deleteBtn = document.querySelector('.deleteBtn');
-        deleteBtn.addEventListener('click', e => { deleteNote(e,element);})
+        deleteBtn.addEventListener('click', e => { deleteNote(e,element, element.id);})
         const copyBtn = document.querySelector('.copyBtn');
         copyBtn.addEventListener('click', e => {copyNote(e,element);})
     });
 }
+function getNotes(){
+    return JSON.parse(localStorage.getItem("allnotes-sticky") || "[]")
+}
+
+function saveNotes(notes){
+    localStorage.setItem("allnotes-sticky", JSON.stringify(notes));
+}
 
 
 
-
-function deleteNote(e,element) {
-    let item = e.target.parentElement.parentElement.parentElement;
-    // console.log(item);
-    item.parentNode.removeChild(item);
-    // console.log(element)
-    allNotes.pop(element);
+function deleteNote(e,element, id) {
+    const doDelete =  confirm("Are you sure you want to delete this note??");
+    if (doDelete){
+        const notes = getNotes().filter((note) => note.id != id);
+        saveNotes(notes);
+        displayNotes(notes);
+    }   
 }
 
 function copyNote(e,element) {
