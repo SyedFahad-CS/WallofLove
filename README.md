@@ -7,6 +7,7 @@ A simple colorful,Desktop First , Mobile-friendly sticky notes app.
 - Copy Text from the Note
 
 ## Desktop Screenshots
+<img width="959" alt="project-thumbnai" src="https://user-images.githubusercontent.com/100190813/192252654-5bf27e61-4e3f-409c-a2be-45a70094006c.png">
 ![nnn](./icons/project-thumbnail.png)
 
  ## Mobile Screenshots
