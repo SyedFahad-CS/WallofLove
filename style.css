@@ -139,6 +139,15 @@ textarea{
     width: 90px
     /* color: ; */
 }
+
+.btns{
+    font-size: 20px;
+    font-weight: 600;
+}
+.btns:hover{
+    color:white;
+    cursor: pointer;
+}
 #add-btn:hover{
     cursor: pointer;
 }
