@@ -7,6 +7,7 @@ A simple colorful,Desktop First , Mobile-friendly sticky notes app.
 - Copy Text from the Note
 - Store Notes by using the Local Storage
 - Fetchs the Notes from the Local storage
+- Functions to make the Note text Bold Italic and Underline
 
 ## Desktop Screenshots
 <img width="959" alt="project-thumbnail" src="https://user-images.githubusercontent.com/100190813/192266065-9705cac1-cc5f-42c9-941c-65f108c33fef.png">
