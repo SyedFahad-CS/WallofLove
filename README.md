@@ -9,7 +9,7 @@ A simple colorful,Desktop First , Mobile-friendly sticky notes app.
 - Fetchs the Notes from the Local storage
 
 ## Desktop Screenshots
-<img width="960" alt="project-thumbnail" src="https://user-images.githubusercontent.com/100190813/192252950-e1df8ee2-3da2-4037-84d6-8867d9c0ddd3.png">
+<img width="959" alt="project-thumbnail" src="https://user-images.githubusercontent.com/100190813/192266065-9705cac1-cc5f-42c9-941c-65f108c33fef.png">
 <img width="959" alt="project-thumbnai" src="https://user-images.githubusercontent.com/100190813/192252654-5bf27e61-4e3f-409c-a2be-45a70094006c.png">
 <!-- ![nnn](./icons/project-thumbnail.png) -->
 
