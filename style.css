@@ -71,7 +71,7 @@ padding-left:50px;
 .icon{height:35px;
 width:35px;
 margin-left:10px;
-margin-right: 10px;;
+margin-right: 10px;
 height: 10vh;
 }
 .navbar img{
@@ -98,7 +98,7 @@ textarea{
     box-shadow: 5px 5px #394356;
     background-color:#dcdada;
     border-radius: 6px;
-    font-size: x-large;
+
 }
 
 .btn{
@@ -241,11 +241,11 @@ contenteditable{
     outline: none;
 } */
 
-.note-view:hover{
+/*.note-view:hover{
 transform: scale(1.07);
-/* color:aliceblue; */
+/* color:aliceblue; 
 font-size: 18px;
-}
+}*/
 .bin-icon{
     height:18px;
     width:18px;
@@ -260,10 +260,10 @@ font-size: 18px;
     margin-top:5px;
     margin-right:6px;
 }
-/* .bin-icon:hover > .note{
+ .bin-icon:hover{
     cursor: pointer;
-    animation:tilt-n-move-shaking 2s linear;
-} */
+    transform: scale(1.01);
+}
 
 .note{
     animation:tilt-n-move-shaking 2s linear;
@@ -329,8 +329,4 @@ footer{
     .input-text{
         width:auto;
     }
-}
-.bottom img{
-    width: 15px;
-    height: 15px;
 }
