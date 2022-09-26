@@ -84,7 +84,7 @@ height: 10vh;
     padding:20px;
     display:flex;
     flex-direction: row;
-	font-size:30px;
+/* 	font-size:30px; */
 }
 
 textarea{
@@ -130,7 +130,7 @@ textarea{
 }
 
 #add-btn{
-   margin:6px;
+   margin:10px;
     border-radius: 2px;
     padding: 8px;
     text-align: center;
