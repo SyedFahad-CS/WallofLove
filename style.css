@@ -330,3 +330,7 @@ footer{
         width:auto;
     }
 }
+.bottom img{
+    width: 15px;
+    height: 15px;
+}
