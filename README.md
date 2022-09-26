@@ -10,10 +10,7 @@ A simple colorful,Desktop First , Mobile-friendly sticky notes app.
 
 ## Desktop Screenshots
 <img width="959" alt="project-thumbnail" src="https://user-images.githubusercontent.com/100190813/192266065-9705cac1-cc5f-42c9-941c-65f108c33fef.png">
-<img width="959" alt="project-thumbnai" src="https://user-images.githubusercontent.com/100190813/192252654-5bf27e61-4e3f-409c-a2be-45a70094006c.png">
-<!-- ![nnn](./icons/project-thumbnail.png) -->
-
-
+<img width="958" alt="project-thumbnai" src="https://user-images.githubusercontent.com/100190813/192266510-6d4866f0-24b6-4dec-be66-fd83d138f2ac.png">
 
  ## Mobile Screenshots
  ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/100190813/192153545-00e95a00-df16-4043-a62c-b979c561181c.gif)
