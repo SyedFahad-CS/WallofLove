@@ -2,14 +2,17 @@
 A simple colorful,Desktop First , Mobile-friendly sticky notes app.
 
 - Add short notes
-- Choose different colors for notes
-- Delete a Note
+- Choose different Background-Colors for notes
+- Functionality to delete a note
 - Copy Text from the Note
+- Store Notes by using the Local Storage
+- Fetchs the Notes from the Local storage
 
 ## Desktop Screenshots
+<img width="960" alt="project-thumbnail" src="https://user-images.githubusercontent.com/100190813/192252950-e1df8ee2-3da2-4037-84d6-8867d9c0ddd3.png">
 <img width="959" alt="project-thumbnai" src="https://user-images.githubusercontent.com/100190813/192252654-5bf27e61-4e3f-409c-a2be-45a70094006c.png">
 <!-- ![nnn](./icons/project-thumbnail.png) -->
-<img width="960" alt="project-thumbnail" src="https://user-images.githubusercontent.com/100190813/192252950-e1df8ee2-3da2-4037-84d6-8867d9c0ddd3.png">
+
 
 
  ## Mobile Screenshots
@@ -21,6 +24,9 @@ HTML, CSS and Vanilla JS
 ## Demo
 We have Hosted it on Netlify.
 You can see live demo [here](https://walloflove.netlify.app).
+
+## Collaborators
+Ankur Tiwaari,Ismeet Kour Chhabda,Syed Fahad,Dhvani Patel
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
