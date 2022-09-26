@@ -12,7 +12,7 @@
 }
 
 .header {
-    background-color: #2b177a1f;
+    background-color: #D4E7F2;
 }
 
 a{
@@ -124,10 +124,12 @@ textarea{
 
 #add-btn{
     margin:10px;
-    height: 1.5rem;
+    height: 30px;
     border-radius: 2px;
     /* padding: 10px; */
     text-align: center;
+	border:none;
+	width:100px
     /* color: ; */
 }
 #add-btn:hover{
