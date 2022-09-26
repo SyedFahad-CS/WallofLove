@@ -7,7 +7,7 @@ const color = document.querySelector('.get-color');
 const notesList = document.querySelector('.notes-list');
 
 const allNotes = getNotes();
-console.log(localStorage.getItem("allnotes-sticky"));
+// console.log(localStorage.getItem("allnotes-sticky"));
 if(localStorage.getItem("allnotes-sticky") !== "[]"){
     displayNotes(getNotes());
 }
@@ -52,7 +52,9 @@ function displayNotes(notes) {
             <div class="buttons">
                 <a class="deleteBtn"><img src="icons/bin.png" class="bin-icon"></a>
                 <a class="copyBtn"><img src="icons/copyBtn.svg" class="copy-icon"></a>
-            
+                <a class="boldBtn btns"><b>B<b></a>
+                <a class="italicBtn btns"><i>I<i></a>
+                <a class="underlineBtn btns"><u>U<u></a>
             </div>
         </div>
         `;
@@ -63,6 +65,16 @@ function displayNotes(notes) {
         deleteBtn.addEventListener('click', e => { deleteNote(e,element, element.id);})
         const copyBtn = document.querySelector('.copyBtn');
         copyBtn.addEventListener('click', e => {copyNote(e,element);})
+        
+        const boldBtn = document.querySelector('.boldBtn');
+        boldBtn.addEventListener('click',e => {boldNote(e,element,element.id);})
+
+        const italicBtn = document.querySelector('.italicBtn');
+        italicBtn.addEventListener('click',e => {italicNote(e,element,element.id);})
+        
+        const underlineBtn = document.querySelector('.underlineBtn');
+        underlineBtn.addEventListener('click',e => {underlineNote(e,element,element.id);})
+      
     });
 }
 function getNotes(){
@@ -73,7 +85,34 @@ function saveNotes(notes){
     localStorage.setItem("allnotes-sticky", JSON.stringify(notes));
 }
 
+function boldNote(e,element,id){
+    // console.log(e);
+    // console.log(element.note);
+    var boldText =  `<b>${element.note}<b>`;
+    updateNote(id,boldText);
+    // alert("boled text: " + boldText);
+    window.location.reload();
+}
+function italicNote(e,element,id){
+    var italicText = `<i>${element.note}<i>`
+    updateNote(id,italicText);
 
+    window.location.reload();
+}
+function underlineNote(e,element,id){
+    var underlineText = `<u>${element.note}<u>`
+    updateNote(id,underlineText);
+
+    window.location.reload();
+}
+
+function updateNote(id, newContent) {
+const notes = getNotes();
+const targetNote = notes.filter((note) => note.id == id)[0];
+
+targetNote.note = newContent;
+saveNotes(notes);
+}
 
 function deleteNote(e,element, id) {
     const doDelete =  confirm("Are you sure you want to delete this note??");
@@ -87,7 +126,7 @@ function deleteNote(e,element, id) {
 function copyNote(e,element) {
     // Get the text field
     console.log(e);
-    console.log(element);
+    console.log(element.note);
     var copyText = `${element.note}`;
   
     navigator.clipboard.writeText(copyText);
