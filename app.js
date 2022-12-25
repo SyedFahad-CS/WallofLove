@@ -38,7 +38,7 @@ function displayNotes(notes) {
     notes.forEach(element => {
        let noteHTML= `
         <div class="note" id="note" style="background-color:${element.noteColor};">
-            <div class="note-view" id="note-view" contenteditable>
+            <div class="note-view" id="note-view">
                 ${element.note}
             </div>
             <div>
